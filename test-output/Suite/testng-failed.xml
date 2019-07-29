@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test on FF(failed)" parallel="tests">
+    <parameter name="browser" value="ff"/>
+    <classes>
+      <class name="TestGrid">
+        <methods>
+          <include name="setUp"/>
+          <include name="logintest"/>
+        </methods>
+      </class> <!-- TestGrid -->
+    </classes>
+  </test> <!-- Test on FF(failed) -->
+  <test thread-count="5" name="Test on Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestGrid">
+        <methods>
+          <include name="setUp"/>
+          <include name="logintest"/>
+        </methods>
+      </class> <!-- TestGrid -->
+    </classes>
+  </test> <!-- Test on Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
